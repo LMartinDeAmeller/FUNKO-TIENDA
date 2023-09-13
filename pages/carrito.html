@@ -8,23 +8,41 @@
 </head>
 <body>
     <header>
-        <a href="#"><img id="LOGO_P" src="/resources/branding/logo_light_horizontal.svg" alt="LOGO"></a>
         <nav class="cont_links">
-            <ul>
-                <li>
-                    <select name="nav_select" class="nav_select" value="SHOP">
-                        <option value="SHOP">SHOP</option>
-                        <option value="POKEMON">POKEMON</option>
-                        <option value="STAR-WARS">STAR WARS</option>
-                        <option value="HARRY-POTTER">HARRY POTTER</option>
-                    </select>
-                </li>
-                <li><a class="nav_a" href="#">CONTACTO</a></li>
-                <li><a class="nav_a" href="#">LOGIN</a></li>
-                <li><a class="nav_a" href="#"><img src="/resources/icons/cart-icon.svg" alt="Tienda"></a></li>
-            </ul>
+          <picture>
+            <a href="../index.html">
+              <img
+                src="../resources/branding/logo_light_horizontal.svg"
+                alt="Logo de la marca Funko"/>
+          </a>
+          </picture>
+  
+          <ul>
+            <li>
+              <select name="nav_select" class="nav_select" value="SHOP">
+                <option value="SHOP">SHOP</option>
+                <option value="POKEMON">POKEMON</option>
+                <option value="STAR-WARS">STAR WARS</option>
+                <option value="HARRY-POTTER">HARRY POTTER</option>
+              </select>
+            </li>
+            <li>
+              <a class="nav_a" href="./pages/contacto.html">CONTACTO</a>
+            </li>
+            <li>
+              <a class="nav_a" href="./pages/login.html">LOGIN</a>
+            </li>
+            <li>
+              <a class="nav_a" href="./pages/carrito.html">
+                <img
+                  src="../resources/icons/cart-icon.svg"
+                  alt="icono de carrito"
+                />
+              </a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <!--CONTENIDO-->
     <main>
@@ -44,7 +62,7 @@
             <div class="cart_element">
                 <div class="item_chr">
 
-                    <img src="/resources/star-wars/baby-yoda-1.webp" alt="Muñeco de Baby Yoda">
+                    <img src="../resources/star-wars/baby-yoda-1.webp" alt="Muñeco de Baby Yoda">
 
                     <div class="item_def">
                         <label class="item_title">BABY YODA BLUEBALL</label>
@@ -63,7 +81,7 @@
 
                 <label class="cart_element_price">$3599.98</label>
 
-                <img class="cart_element_del" src="/resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
+                <img class="cart_element_del" src="../resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
 
             </div>
 
@@ -71,7 +89,7 @@
             <div class="cart_element">
                 <div class="item_chr">
 
-                    <img src="/resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
+                    <img src="../resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
 
                     <div class="item_def">
                         <label class="item_title">PIDGEOTTO</label>
@@ -90,7 +108,7 @@
 
                 <label class="cart_element_price">$1799.99</label>
 
-                <img class="cart_element_del" src="/resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
+                <img class="cart_element_del" src="../resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
 
             </div>
         </section>
@@ -131,7 +149,7 @@
                     <li><a href="#">CONTACTO</a></li>
                 </ul>
             </div>
-            <img id="LOGO_S" src="/resources/branding/isotype.svg" alt="">
+            <img id="LOGO_S" src="../resources/branding/isotype.svg" alt="">
         </div>
         <p class="p_derechos">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
