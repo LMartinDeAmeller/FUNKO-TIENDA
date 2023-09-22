@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUNKO-SHOP</title>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="../css/global_stylesheet.css">
+    <link rel="stylesheet" href="../css/carrito.css">
 </head>
 <body>
     <header>
-        <a href="#"><img id="LOGO_P" src="/resources/branding/logo_light_horizontal.svg" alt="LOGO"></a>
+        <a href="../html/home.html"><img src= "../resources/branding/logo_light_horizontal.svg" alt="LOGO"></a>
         <nav class="cont_links">
             <ul>
-                <li>
-                    <select name="nav_select" class="nav_select" value="SHOP">
-                        <option value="SHOP">SHOP</option>
-                        <option value="POKEMON">POKEMON</option>
-                        <option value="STAR-WARS">STAR WARS</option>
-                        <option value="HARRY-POTTER">HARRY POTTER</option>
-                    </select>
-                </li>
+                <li><a class="nav_a" href="../html/shop.html">SHOP</a></li>
                 <li><a class="nav_a" href="#">CONTACTO</a></li>
                 <li><a class="nav_a" href="#">LOGIN</a></li>
-                <li><a class="nav_a" href="#"><img src="/resources/icons/cart-icon.svg" alt="Tienda"></a></li>
+                <li><a class="nav_a" href="../html/carrito.html"><img src="/resources/icons/cart-icon.svg" alt="Tienda"></a></li>
             </ul>
         </nav>
     </header>
@@ -29,12 +23,12 @@
     <!--CONTENIDO-->
     <main>
 
-        <h1>CARRITO DE COMPRAS</h1>
+        <h1 class="infoTitle">CARRITO DE COMPRAS</h1>
 
         <!--Contenido del carrito-->
         <section class="cont_cart_elements">
             <!--Headers-->
-            <div>
+            <div class="divClassifier">
                 <label class="cart_label">DETALLE DEL PRODUCTO</label>
                 <label class="cart_label">CANTIDAD</label>
                 <label class="cart_label">TOTAL</label>
@@ -44,19 +38,20 @@
             <div class="cart_element">
                 <div class="item_chr">
 
-                    <img src="/resources/star-wars/baby-yoda-1.webp" alt="Muñeco de Baby Yoda">
+                    <img class="imgFunko" src="/resources/star-wars/baby-yoda-1.webp" alt="Muñeco de Baby Yoda">
 
                     <div class="item_def">
                         <label class="item_title">BABY YODA BLUEBALL</label>
                         <label class="item_brand">STAR WARS</label>
-                        <label class="item_price">PRECIO UNITARIO: $1799.99</label>
+                        <label class="item_price">PRECIO: $1799.99</label>
                     </div>
                     
                 </div>
-                <div>
+                <div class="valueContainer">
                     <input type="text" class="item_cant">
                     <div>
                         <input type="button" class="item_cant_button" value="+">
+                        <br>
                         <input type="button" class="item_cant_button" value="-">
                     </div>
                 </div>
@@ -71,19 +66,20 @@
             <div class="cart_element">
                 <div class="item_chr">
 
-                    <img src="/resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
+                    <img class="imgFunko" src="/resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
 
                     <div class="item_def">
                         <label class="item_title">PIDGEOTTO</label>
                         <label class="item_brand">POKEMON</label>
-                        <label class="item_price">PRECIO UNITARIO: $1799.99</label>
+                        <label class="item_price">PRECIO: $1799.99</label>
                     </div>
 
                 </div>
-                <div>
+                <div class="valueContainer">
                     <input type="text" class="item_cant">
                     <div>
                         <input type="button" class="item_cant_button" value="+">
+                        <br>
                         <input type="button" class="item_cant_button" value="-">
                     </div>
                 </div>
@@ -96,43 +92,43 @@
         </section>
 
         <!--Resumen del carrito-->
-        <section>
-            <h2>RESUMEN</h2>
-
-            <div>
-                <div class="resumen_info">
-                    <label class="resumen_key">CANTIDAD DE ELEMENTOS</label>
-                    <label class="resumen_value">3</label>
+        <section class="resumeContainer">
+            <div class="resumeSubContainer">
+                <h2 class="infoTitle" id="resumeTitle">RESUMEN</h2>
+    
+                <div>
+                    <div class="resumen_info">
+                        <label class="resumen_key">CANTIDAD DE ELEMENTOS</label>
+                        <label class="resumen_value">3</label>
+                    </div>
+                    <div class="resumen_info">
+                        <label class="resumen_key">SUBTOTAL</label>
+                        <label class="resumen_value">$5399.97</label>
+                    </div>
+                    <div class="resumen_info">
+                        <label class="resumen_key">ENVIO</label>
+                        <label class="resumen_value">$0.00</label>
+                    </div>
+                    <div class="resumen_info_total">
+                        <label class="resumen_key_total">TOTAL</label>
+                        <label class="resumen_value_total">$5399.97</label>
+                    </div>
                 </div>
-                <div class="resumen_info">
-                    <label class="resumen_key">SUBTOTAL</label>
-                    <label class="resumen_value">$5399.97</label>
-                </div>
-                <div class="resumen_info">
-                    <label class="resumen_key">ENVIO</label>
-                    <label class="resumen_value">$0.00</label>
-                </div>
-                <div class="resumen_info_total">
-                    <label class="resumen_key_total">TOTAL</label>
-                    <label class="resumen_value_total">$5399.97</label>
-                </div>
+    
+                <button id="pay_button">IR A PAGAR</button>
             </div>
-
-            <button id="pay_button">IR A PAGAR</button>
         </section>
     </main>
 
     <footer>
-        <div>
-            <div>
-                <ul>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">INGRESAR</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </div>
-            <img id="LOGO_S" src="/resources/branding/isotype.svg" alt="">
-        </div>
+        <section class="fot_sect">
+            <ul>
+                <li><a class="fot_a" href="#">SHOP</a></li>
+                <li><a class="fot_a" href="#">INGRESAR</a></li>
+                <li><a class="fot_a" href="#">CONTACTO</a></li>
+            </ul>
+            <img id="LOGO_S" src="../resources/branding/isotype.svg" alt="LOGO">
+        </section>
         <p class="p_derechos">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>

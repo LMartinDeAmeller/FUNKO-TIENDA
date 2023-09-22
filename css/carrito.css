@@ -1,0 +1,138 @@
+.cont_cart_elements{
+    display: flex;
+    flex-direction: column;
+}
+
+.divClassifier{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgFunko{
+    width: 118px;
+    height: 118px;
+}
+
+.cart_element{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item_chr{
+    display: flex;
+}
+
+.item_price{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.item_brand{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item_title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item_def{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.item_cant_button{
+    background-color: #F24E1E;
+    color: white;
+    border: none;
+    width: 18px;
+    height: 16px;
+    text-align: center;
+}
+
+.item_cant{
+    width: 90px;
+    height: 40px;
+}
+
+.valueContainer{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.resumeContainer{
+    display: flex;
+    justify-content: end;
+}
+
+.resumeSubContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.infoTitle{
+    font-size: 46px;
+    font-weight: 700;
+    border-bottom: 5px solid #FF3333;
+    width: fit-content;
+}
+#resumeTitle{
+    align-self: flex-end;
+}
+
+.resumen_key{
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+    justify-self: flex-start;
+    text-align: left;
+}
+
+.resumen_value{
+    font-size: 16px;
+    font-weight: 700;
+    flex: 1;
+    justify-self: flex-end;
+    text-align: right;
+}
+.resumen_key_total{
+    font-size: 20px;
+    font-weight: 700;
+    flex: 1;
+    justify-self: flex-start;
+    text-align: left;
+}
+
+.resumen_value_total{
+    font-size: 24px;
+    font-weight: 700;
+    flex: 1;
+    justify-self: flex-start;
+    text-align: right;
+}
+
+#pay_button{
+    background-color: #FF3333;
+    width: 572px;
+    height: 69px;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.resumen_info{
+    display: flex;
+    text-align: center;
+}
+
+.resumen_info_total{
+    display: flex;
+    text-align: center;
+    border-top: 2px solid #FF3333;
+}

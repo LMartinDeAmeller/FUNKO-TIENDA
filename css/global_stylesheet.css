@@ -1,0 +1,91 @@
+html{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    top: 0px;
+    left: 0px;
+    background-color: #30343F;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #30343F;
+    width: 100%;
+    padding-top: 50px;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.cont_links{
+    flex: 1;
+}
+
+.LOGO_P{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cont_links ul{
+    display: flex;
+    justify-content: space-between;
+}
+.cont_links ul li:nth-child(4){
+    padding-right: 50px;
+}
+
+.nav_a{
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.fot_a{
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.fot_sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot_sect ul{
+    flex: 1;
+}
+.fot_sect img{
+    flex:1;
+    width: 143px;
+    height: 116px;
+}
+
+.p_derechos{
+    color: white;
+    text-align: center;
+}
