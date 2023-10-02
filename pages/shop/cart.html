@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP | FUNKO-SHOP</title>
-    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../styles/index.css">
 </head>
 
 <body>
@@ -50,12 +50,11 @@
 
 
     <!--CONTENIDO-->
-    <main>
-
+    <main class="container">
         <h2>CARRITO DE COMPRAS</h2>
 
         <!--Contenido del carrito-->
-        <section class="cont_cart_elements">
+        <section class="cont_cart_elements container">
             <!--Headers-->
             <section>
                 <ul>
@@ -67,7 +66,7 @@
 
 
             <!--baby yoda element-->
-            <section class="cart_element">
+            <section class="cart_element container">
                 <article class="item_chr">
                     <picture>
                         <img src="../../resources/star-wars/baby-yoda-1.webp" alt="Muñeco de Baby Yoda">
@@ -78,25 +77,26 @@
                         <p class="item_price">PRECIO UNITARIO: $1799.99</p>
                     </div>
                 </article>
-            </section>
-            <div>
-                <input type="text" class="item_cant">
                 <div>
-                    <input type="button" class="item_cant_button" value="+">
-                    <input type="button" class="item_cant_button" value="-">
+                    <input type="text" class="item_cant">
+                    <div>
+                        <input type="button" class="item_cant_button" value="+">
+                        <input type="button" class="item_cant_button" value="-">
+                    </div>
                 </div>
-            </div>
-
-            <p class="cart_element_price">$3599.98</p>
-            <img class="cart_element_del" src="../../resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
+    
+                <p class="cart_element_price">$3599.98</p>
+                <img class="cart_element_del" src="../../resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
+            </section>
+            
         </section>
 
         <!--PIDGEOTTO cart element-->
         <div class="cart_element">
             <div class="item_chr">
-
-                <img src="../../resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
-
+                <picture class="cart__collection">
+                    <img src="../../resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
+                </picture>
                 <div class="item_def">
                     <label class="item_title">PIDGEOTTO</label>
                     <label class="item_brand">POKEMON</label>
