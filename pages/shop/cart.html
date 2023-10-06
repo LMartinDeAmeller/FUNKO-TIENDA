@@ -50,100 +50,71 @@
 
 
     <!--CONTENIDO-->
-    <main class="container">
-        <h2>CARRITO DE COMPRAS</h2>
+    <main id="cart" class="container">
+        <h2 class="cart__title">CARRITO DE COMPRAS</h2>
 
-        <!--Contenido del carrito-->
-        <section class="cont_cart_elements container">
-            <!--Headers-->
-            <section>
-                <ul>
-                    <li class="cart_label">DETALLE DEL PRODUCTO</li>
-                    <li class="cart_label">CANTIDAD</li>
-                    <li class="cart_label">TOTAL</li>
-                </ul>
-            </section>
-
-
-            <!--baby yoda element-->
-            <section class="cart_element container">
-                <article class="item_chr">
-                    <picture>
-                        <img src="../../resources/star-wars/baby-yoda-1.webp" alt="Muñeco de Baby Yoda">
+        <section class="cart__details">
+            <ul class="cart__details-list">
+                <li>DETALLE DEL PRODUCTO</li>
+                <li>CANTIDAD</li>
+                <li>TOTAL</li>
+            </ul>
+        </section>
+        <section class="cart__items">
+            <article class="cart__item">
+                <div class="cart__item__info">
+                    <picture class="cart__item-img">
+                        <img src="../../img/star-wars/baby-yoda-1.webp"
+                            alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
                     </picture>
-                    <div class="item_def">
-                        <h3 class="item_title">BABY YODA BLUEBALL</h3>
-                        <p class="item_brand">STAR WARS</p>
-                        <p class="item_price">PRECIO UNITARIO: $1799.99</p>
-                    </div>
-                </article>
-                <div>
-                    <input type="text" class="item_cant">
                     <div>
-                        <input type="button" class="item_cant_button" value="+">
-                        <input type="button" class="item_cant_button" value="-">
+                        <h3>BABY YODA BLUEBALL</h3>
+                        <p>STAR WARS</p>
+                        <p>precio: $ 1799,99</p>
                     </div>
                 </div>
-    
-                <p class="cart_element_price">$3599.98</p>
-                <img class="cart_element_del" src="../../resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
-            </section>
-            
+                <div>
+                    <input type="number" id="amount" name="amount">
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+                <span>$3599,98</span>
+                <img class="cart__item-delete" src="../../img/icons/delete_trash.svg">
+            </article>
+            <article class="cart__item">
+                <div class="cart__item__info">
+                    <picture class="cart__item-img">
+                        <img src="../../img/pokemon/pidgeotto-1.webp"
+                            alt="Figura coleccionable Funko de Pidgeotto de Pokemon">
+                    </picture>
+                    <div>
+                        <h3>PIDGEOTTO</h3>
+                        <p>POKEMON</p>
+                        <p>precio unitario: $ 1799,99</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="number" id="amount" name="amount">
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+                <span>$1799,99</span>
+                <img class="cart__item-delete" src="../../img/icons/delete_trash.svg">
+            </article>
         </section>
 
-        <!--PIDGEOTTO cart element-->
-        <div class="cart_element">
-            <div class="item_chr">
-                <picture class="cart__collection">
-                    <img src="../../resources/pokemon/pidgeotto-1.webp" alt="Muñeco de PIDGEOTTO">
-                </picture>
-                <div class="item_def">
-                    <label class="item_title">PIDGEOTTO</label>
-                    <label class="item_brand">POKEMON</label>
-                    <label class="item_price">PRECIO UNITARIO: $1799.99</label>
-                </div>
-
+        <section class="cart__overview">
+            <h2  class="cart__title cart__title-overview">RESUMEN</h2>
+            <div class="cart__details">
+                <p>CANTIDAD DE ELEMENTOS</p>
+                <p>SUBTOTAL</p>
+                <p>ENVIO</p>
+                <p>TOTAL</p>
             </div>
-            <div>
-                <input type="text" class="item_cant">
-                <div>
-                    <input type="button" class="item_cant_button" value="+">
-                    <input type="button" class="item_cant_button" value="-">
-                </div>
-            </div>
-
-            <p class="cart_element_price">$1799.99</p>
-
-            <img class="cart_element_del" src="../../resources/icons/delete_trash.svg" alt="Eliminar elemento del carrito">
-
-        </div>
-
-        <!--Resumen del carrito-->
-        <section>
-            <h2>RESUMEN</h2>
-            <div>
-                <div class="resumen_info">
-                    <p class="resumen_key">CANTIDAD DE ELEMENTOS</p>
-                    <p class="resumen_value">3</p>
-                </div>
-                <div class="resumen_info">
-                    <p class="resumen_key">SUBTOTAL</p>
-                    <p class="resumen_value">$5399.97</p>
-                </div>
-                <div class="resumen_info">
-                    <p class="resumen_key">ENVIO</p>
-                    <p class="resumen_value">$0.00</p>
-                </div>
-                <div class="resumen_info_total">
-                    <p class="resumen_key_total">TOTAL</p>
-                    <p class="resumen_value_total">$5399.97</p>
-                </div>
-            </div>
-
-            <button id="pay_button">IR A PAGAR</button>
+            <h3 class="cart__checkout">IR A PAGAR</h3>
         </section>
     </main>
-
+    
     <footer class="footer"> <!-- Inicio Footer -->
         <nav class="navbar container">
             <ul class="navbar__item">
